@@ -17,6 +17,7 @@ jobs:
       - name: Build Project Artifacts
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
   Deploy:
+    needs: Build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy Project Artifacts to Vercel
