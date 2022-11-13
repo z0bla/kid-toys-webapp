@@ -5,7 +5,13 @@ on:
     branches:
       - main
 jobs:
+  CypressTest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
   BuildAndDeploy:
+    needs: CypressTest
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
