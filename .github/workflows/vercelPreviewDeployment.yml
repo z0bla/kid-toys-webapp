@@ -7,12 +7,13 @@ on:
 jobs:
   CypressTest:
     runs-on: ubuntu-20.04
-    # let's make sure our tests pass on Chrome browser
-    name: E2E on Chrome
+    name: Cypress Testing
     steps:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v4
         with:
+          build: npm run build
+          start: npm start
           browser: chrome
   BuildAndDeploy:
     needs: CypressTest
