@@ -1,5 +1,4 @@
 name: Vercel Preview Deployment
-run-name: Nurko is ${{ github.actor }}
 on:
   push:
     branches-ignore:
