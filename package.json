@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "cypress open",
     "eject": "react-scripts eject",
-    "update": "npx npm-check-updates --target minor && npm install"
+    "update": "npx npm-check-updates -u --target minor && npm install"
   },
   "eslintConfig": {
     "extends": [
