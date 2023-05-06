@@ -9,7 +9,7 @@ type landingPageProps = {
   children: React.ReactNode;
 };
 
-const Layout = (props: landingPageProps) => {
+function Layout(props: landingPageProps): JSX.Element {
   return (
     <>
       <Header />
@@ -17,6 +17,6 @@ const Layout = (props: landingPageProps) => {
       <Footer />
     </>
   );
-};
+}
 
 export default Layout;

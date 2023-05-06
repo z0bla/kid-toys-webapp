@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./LandingPage.module.css";
 
-function LandingPage() {
+function LandingPage(): JSX.Element {
   return (
     <main className={styles.page}>
       <h1>Lorem ipsum dolor sit.</h1>
