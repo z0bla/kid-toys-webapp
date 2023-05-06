@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Header.module.css";
 
-function Header() {
+function Header(): JSX.Element {
   return (
     <div className={styles.header}>
       <h1>Kid Toyz</h1>
