@@ -36,8 +36,15 @@
   padding: 0.7rem 1.7rem;
   margin: 0 1rem;
   background-color: greenyellow;
-  border: 1px solid red;
   border-radius: 0.5rem;
+}
+
+.list li a:hover {
+  background-color: rgb(116, 101, 252);
+}
+
+.navBar {
+  padding: 1rem 0;
 }
 
 .navBar ul {
@@ -57,4 +64,8 @@
   text-decoration: none;
   color: white;
   background-color: rgb(116, 101, 252);
+}
+
+.navBar ul a:hover {
+  background-color: greenyellow;
 }

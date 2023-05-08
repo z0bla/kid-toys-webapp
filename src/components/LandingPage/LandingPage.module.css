@@ -1,3 +1,11 @@
 .page {
+  display: flex;
   padding: 1rem;
+  background: linear-gradient(aqua, grey);
+  min-height: 700px;
+  justify-content: center;
+}
+
+.article {
+  max-width: 1000px;
 }
