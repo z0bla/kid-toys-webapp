@@ -1,11 +1,60 @@
+.headerContainer {
+  background-color: aqua;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
 }
 
+.logoAndName {
+  display: flex;
+}
+
+.logoImg {
+  max-width: 5rem;
+}
+
+.nameOfPage {
+  color: blue;
+  padding-left: 2rem;
+}
+
+.navBarHeader {
+  display: flex;
+}
+
 .list {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  align-items: center;
+}
+
+.list li a {
+  text-decoration: none;
+  padding: 0.7rem 1.7rem;
+  margin: 0 1rem;
+  background-color: greenyellow;
+  border: 1px solid red;
+  border-radius: 0.5rem;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navBar ul li {
+  justify-content: center;
+}
+
+.navBar ul a {
+  border-radius: 0.7rem;
+  padding: 1rem 3rem;
+  margin: 0 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(116, 101, 252);
 }
