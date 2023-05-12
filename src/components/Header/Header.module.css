@@ -130,7 +130,7 @@
 }
 
 @media screen and (max-width: 380px) {
-  .leftSideHeader {
+  .logoText {
     display: none;
   }
 
