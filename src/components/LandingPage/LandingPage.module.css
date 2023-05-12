@@ -8,4 +8,37 @@
 
 .article {
   max-width: 1000px;
+  display: flex;
+  background: skyblue;
+  border-radius: 4rem;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+}
+
+.rightSide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightSide h1 {
+  padding: 5px 10px;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 780px) {
+  .article {
+    flex-direction: column;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .leftSide img {
+    width: 30vh;
+  }
 }
