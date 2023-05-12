@@ -35,6 +35,10 @@
     flex-direction: column;
     border-radius: 0;
   }
+
+  .rightSide p {
+    padding: 3rem 2rem;
+  }
 }
 
 @media screen and (max-width: 510px) {
