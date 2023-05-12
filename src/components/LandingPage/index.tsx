@@ -4,7 +4,7 @@ import styles from "./LandingPage.module.css";
 
 function LandingPage(): JSX.Element {
   return (
-    <main className={styles.page}>
+    <main className={styles.body}>
       <div className={styles.article}>
         <h1>Lorem ipsum dolor sit.</h1>
         <p>

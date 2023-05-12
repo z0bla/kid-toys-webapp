@@ -1,9 +1,9 @@
-.page {
+.body {
   display: flex;
-  padding: 1rem;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(aqua, grey);
   min-height: 700px;
-  justify-content: center;
 }
 
 .article {

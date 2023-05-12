@@ -1,43 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineBars } from "react-icons/ai";
+import { RiCloseLine } from "react-icons/ri";
 
 import styles from "./Header.module.css";
 import logo from "./logoForHeader.png";
 
 function Header(): JSX.Element {
+  const [showMenu, setShowNMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowNMenu(!showMenu);
+  };
   return (
     <div className={styles.headerContainer}>
-      <div className={styles.header}>
-        <div className={styles.logoAndName}>
-          <img className={styles.logoImg} src={logo} alt="img" />
-          <h1 className={styles.nameOfPage}>Kid Toys</h1>
-        </div>
-        <nav className={styles.navBarHeader}>
-          <ul className={styles.list}>
-            <li>
-              <a href="#">Register</a>
-            </li>
-            <li>
-              <a href="#">Login</a>
-            </li>
-          </ul>
-        </nav>
+      <div className={styles.leftSideHeader}>
+        <img src={logo} className={styles.logoImg} />
+        <h2 className={styles.logoText}>Kid Toys</h2>
       </div>
-      <nav className={styles.navBar}>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Catalog</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-        </ul>
+      <nav
+        className={styles.navigation}
+        id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
+      >
+        <a href="#" className={styles.navBtn}>
+          Home
+        </a>
+        <a href="#" className={styles.navBtn}>
+          Contact
+        </a>
+        <a href="#" className={styles.navBtn}>
+          About Us
+        </a>
+        <button className={`${styles.btnLogin} ${styles.navBtn}`}>
+          Log in
+        </button>
+        <button className={`${styles.btnRegister} ${styles.navBtn}`}>
+          Register
+        </button>
       </nav>
+      <div className={styles.meniBarIcon} onClick={toggleMenu}>
+        {showMenu ? (
+          <RiCloseLine color="blueviolet" size={30} />
+        ) : (
+          <AiOutlineBars color="blueviolet" size={27} />
+        )}
+      </div>
     </div>
   );
 }
