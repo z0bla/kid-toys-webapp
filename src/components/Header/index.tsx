@@ -7,9 +7,11 @@ import logo from "./logoForHeader.png";
 
 function Header(): JSX.Element {
   const [showMenu, setShowNMenu] = useState(false);
+
   const toggleMenu = () => {
     setShowNMenu(!showMenu);
   };
+
   return (
     <div className={styles.headerContainer}>
       <div className={styles.leftSideHeader}>
