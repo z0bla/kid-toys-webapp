@@ -1,27 +1,16 @@
 import React from "react";
 
 import "./App.css";
-import logo from "./logo.svg";
+import LandingPage from "./components/LandingPage";
+import Layout from "./components/Layout";
 
-function App() {
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1>Nurkec</h1>
-      </header>
-    </div>
+    <>
+      <Layout>
+        <LandingPage />
+      </Layout>
+    </>
   );
 }
 
