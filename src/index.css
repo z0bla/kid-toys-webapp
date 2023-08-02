@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap");
 
 :root {
-  --gray-dark: #252525;
-  --gray-medium: #212121;
-  --gray-light: #333;
-  --white: #fff;
-  --pink-dark: #f379a7;
-  --pink-light: #fcdcea;
-  --blue-dark: #95b3e0;
-  --blue-light: #e4f6fe;
+  --neutral-darkest: #252525;
+  --neutral-darker: #212121;
+  --neutral-dark: #333;
+  --neutral-lightest: #fff;
+  --accent-pink-dark: #f379a7;
+  --accent-pink-light: #fcdcea;
+  --accent-blue-dark: #95b3e0;
+  --accent-blue-light: #e4f6fe;
 
   --font-primary: "Fredoka", sans-serif;
 }
