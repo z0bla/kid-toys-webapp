@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Rubik:wght@400;600&display=swap");
 
 :root {
   --neutral-darkest: #252525;
@@ -13,7 +13,8 @@
   --accent-blue-dark: #95b3e0;
   --accent-blue-light: #e4f6fe;
 
-  --font-primary: "Fredoka", sans-serif;
+  --font-primary: "Rubik", sans-serif;
+  --font-secondary: "Fredoka", sans-serif;
 }
 
 body {
