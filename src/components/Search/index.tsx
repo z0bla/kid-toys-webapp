@@ -23,7 +23,7 @@ function Search(): JSX.Element {
         placeholder="Search everything"
         onChange={handleSearchInput}
       />
-      <button>
+      <button className={styles.searchButton}>
         <CiSearch />
       </button>
     </form>
