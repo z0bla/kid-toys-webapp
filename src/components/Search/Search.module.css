@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+}
+
+.searchField {
+  border-radius: 22px 0 0 22px;
+  border: 1px solid var(--neutral-light);
+  color: var(--neutral-dark);
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 1rem;
+}
+
+.searchField:focus {
+  border: 1px solid var(--accent-pink-dark);
+  outline: none;
+}

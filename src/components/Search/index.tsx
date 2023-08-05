@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 
+import styles from "./Search.module.css";
+
 function Search(): JSX.Element {
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -14,8 +16,9 @@ function Search(): JSX.Element {
   };
 
   return (
-    <form onSubmit={handleSearchSubmit}>
+    <form className={styles.form} onSubmit={handleSearchSubmit}>
       <input
+        className={styles.searchField}
         type="search"
         placeholder="Search everything"
         onChange={handleSearchInput}
