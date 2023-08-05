@@ -10,18 +10,20 @@
   align-items: center;
 }
 
-.leftSideHeader {
-  display: flex;
+.logoContainer {
   align-items: center;
+  display: flex;
+  font-family: var(--font-secondary);
+  gap: 0.5rem;
 }
 
 .logoImg {
-  width: 4em;
+  height: 2.5rem;
 }
 
 .logoText {
-  margin-left: 1em;
-  color: blueviolet;
+  color: var(--neutral-darkest);
+  font-size: 2.5rem;
 }
 
 .navigation a {
