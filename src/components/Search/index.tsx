@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CiSearch } from "react-icons/ci";
 
 function Search(): JSX.Element {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +20,9 @@ function Search(): JSX.Element {
         placeholder="Search everything"
         onChange={handleSearchInput}
       />
-      <button>Search</button>
+      <button>
+        <CiSearch />
+      </button>
     </form>
   );
 }
