@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 
+import Search from "../Search";
 import styles from "./Header.module.css";
 import logo from "./kid-toys-logo.svg";
 
@@ -18,6 +19,7 @@ function Header(): JSX.Element {
         <img src={logo} className={styles.logoImg} />
         <h2 className={styles.logoText}>Kid Toys</h2>
       </div>
+      <Search />
       <nav
         className={styles.navigation}
         id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
