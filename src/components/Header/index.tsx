@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 
+import Logo from "../Logo";
 import Search from "../Search";
 import styles from "./Header.module.css";
-import logo from "./kid-toys-logo.svg";
 
 function Header(): JSX.Element {
   const [showMenu, setShowNMenu] = useState(false);
@@ -15,10 +15,7 @@ function Header(): JSX.Element {
 
   return (
     <div className={styles.headerContainer}>
-      <div className={styles.logoContainer}>
-        <img src={logo} className={styles.logoImg} />
-        <h2 className={styles.logoText}>Kid Toys</h2>
-      </div>
+      <Logo />
       <Search />
       <nav
         className={styles.navigation}
