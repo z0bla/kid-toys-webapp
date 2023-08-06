@@ -4,6 +4,7 @@ import { RiCloseLine } from "react-icons/ri";
 
 import Logo from "../Logo";
 import Search from "../Search";
+import SiteActions from "../SiteActions";
 import styles from "./Header.module.css";
 
 function Header(): JSX.Element {
@@ -17,6 +18,7 @@ function Header(): JSX.Element {
     <div className={styles.headerContainer}>
       <Logo />
       <Search />
+      <SiteActions />
       <nav
         className={styles.navigation}
         id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
