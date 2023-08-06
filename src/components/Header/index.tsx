@@ -19,7 +19,7 @@ function Header(): JSX.Element {
       <Logo />
       <Search />
       <SiteActions />
-      <nav
+      {/* <nav
         className={styles.navigation}
         id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
       >
@@ -45,7 +45,7 @@ function Header(): JSX.Element {
         ) : (
           <AiOutlineBars color="blueviolet" size={27} />
         )}
-      </div>
+      </div> */}
     </div>
   );
 }
