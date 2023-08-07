@@ -3,6 +3,7 @@ import { AiOutlineBars } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 
 import Logo from "../Logo";
+import NavBar from "../NavBar";
 import Search from "../Search";
 import SiteActions from "../SiteActions";
 import styles from "./Header.module.css";
@@ -19,6 +20,7 @@ function Header(): JSX.Element {
       <Logo />
       <Search />
       <SiteActions />
+      <NavBar />
       {/* <nav
         className={styles.navigation}
         id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
