@@ -7,7 +7,7 @@ export default function SiteActions() {
   return (
     <div className={styles.siteActions}>
       <a href="#">Account</a>
-      <CiShoppingCart fontSize={24} />
+      <CiShoppingCart />
     </div>
   );
 }
