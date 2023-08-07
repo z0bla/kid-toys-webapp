@@ -12,7 +12,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <div className={styles.navIcon} onClick={handleShowNavBar}>
         <CiMenuBurger />
       </div>

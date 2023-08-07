@@ -1,3 +1,7 @@
+.nav {
+  margin: auto;
+}
+
 .navIcon {
   font-size: 1.25rem;
 }
@@ -15,7 +19,6 @@
 }
 
 .navMenu.active {
-  display: block;
   transform: translateX(0);
 }
 
@@ -50,4 +53,27 @@
 
 .navMenu a:hover {
   color: var(--accent-pink-dark);
+}
+
+@media screen and (min-width: 40rem) {
+  .navIcon {
+    display: none;
+  }
+
+  .closeButton {
+    display: none;
+  }
+
+  .navMenu {
+    box-shadow: none;
+    margin-top: 3rem;
+    padding: 0;
+    padding: 1rem;
+    position: static;
+    transform: translateX(0);
+  }
+
+  .navMenu ul {
+    flex-direction: row;
+  }
 }
