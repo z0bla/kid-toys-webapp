@@ -67,7 +67,7 @@
 
   .navMenu {
     box-shadow: none;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 0;
     position: static;
     transform: translateX(0);
@@ -75,5 +75,8 @@
 
   .navMenu ul {
     flex-direction: row;
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
 }
