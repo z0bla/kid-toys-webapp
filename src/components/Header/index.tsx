@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { AiOutlineBars } from "react-icons/ai";
-import { RiCloseLine } from "react-icons/ri";
+import React from "react";
 
 import Logo from "../Logo";
 import NavBar from "../NavBar";
@@ -9,45 +7,12 @@ import SiteActions from "../SiteActions";
 import styles from "./Header.module.css";
 
 function Header(): JSX.Element {
-  const [showMenu, setShowNMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowNMenu(!showMenu);
-  };
-
   return (
     <div className={styles.headerContainer}>
       <Logo />
       <Search />
       <SiteActions />
       <NavBar />
-      {/* <nav
-        className={styles.navigation}
-        id={showMenu ? styles.mobileNavLinks : styles.hideMobileNavLinks}
-      >
-        <a href="#" className={styles.navBtn}>
-          Home
-        </a>
-        <a href="#" className={styles.navBtn}>
-          Contact
-        </a>
-        <a href="#" className={styles.navBtn}>
-          About Us
-        </a>
-        <button className={`${styles.btnLogin} ${styles.navBtn}`}>
-          Log in
-        </button>
-        <button className={`${styles.btnRegister} ${styles.navBtn}`}>
-          Register
-        </button>
-      </nav>
-      <div className={styles.meniBarIcon} onClick={toggleMenu}>
-        {showMenu ? (
-          <RiCloseLine color="blueviolet" size={30} />
-        ) : (
-          <AiOutlineBars color="blueviolet" size={27} />
-        )}
-      </div> */}
     </div>
   );
 }
