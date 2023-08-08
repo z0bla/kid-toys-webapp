@@ -6,7 +6,7 @@
   background-color: var(--neutral-lightest);
   bottom: 0;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  padding: 4rem 2rem 2rem;
+  padding: 5rem 3.125rem 1.25rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -66,9 +66,8 @@
 
   .navMenu {
     box-shadow: none;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     padding: 0;
-    padding: 1rem;
     position: static;
     transform: translateX(0);
   }
