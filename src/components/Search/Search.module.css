@@ -8,7 +8,7 @@
   color: var(--neutral-dark);
   font-family: inherit;
   font-size: 0.875rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .searchField:focus {
@@ -31,5 +31,11 @@
 @media screen and (min-width: 40rem) {
   .form {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .searchField {
+    padding: 0.75rem 1.5rem;
   }
 }
