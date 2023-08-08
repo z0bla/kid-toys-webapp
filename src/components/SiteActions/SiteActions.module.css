@@ -16,6 +16,10 @@
   font-size: 1.25rem;
 }
 
+.siteActions svg:hover {
+  cursor: pointer;
+}
+
 .siteActions * {
   transition: color 0.2s;
 }
