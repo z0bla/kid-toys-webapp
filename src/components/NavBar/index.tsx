@@ -28,28 +28,19 @@ export default function NavBar() {
             <a href="#">Sale</a>
           </li>
           <li>
-            <a href="#">Action Figures and Vehicles</a>
-          </li>
-          <li>
-            <a href="#">Dolls</a>
-          </li>
+            <a href="#">Toys</a>
+          </li>{" "}
           <li>
             <a href="#">Games</a>
           </li>
           <li>
-            <a href="#">Make and Create</a>
+            <a href="#">Puzzles</a>
           </li>
           <li>
             <a href="#">Outdoor</a>
           </li>
           <li>
             <a href="#">Pre-School</a>
-          </li>
-          <li>
-            <a href="#">Puzzles</a>
-          </li>
-          <li>
-            <a href="#">Soft Toys</a>
           </li>
         </ul>
       </div>
