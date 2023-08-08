@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CiSearch } from "react-icons/ci";
+import { IoSearchOutline } from "react-icons/io5";
 
 import styles from "./Search.module.css";
 
@@ -24,7 +24,7 @@ function Search(): JSX.Element {
         onChange={handleSearchInput}
       />
       <button className={styles.searchButton}>
-        <CiSearch />
+        <IoSearchOutline />
       </button>
     </form>
   );

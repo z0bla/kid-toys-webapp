@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CiCircleRemove, CiMenuBurger } from "react-icons/ci";
+import { IoCloseOutline, IoMenuOutline } from "react-icons/io5";
 
 import styles from "./NavBar.module.css";
 
@@ -14,11 +14,11 @@ export default function NavBar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.navIcon} onClick={handleShowNavBar}>
-        <CiMenuBurger />
+        <IoMenuOutline />
       </div>
       <div className={`${styles.navMenu} ${showNavBar ? styles.active : ""}`}>
         <div className={styles.closeButton} onClick={handleShowNavBar}>
-          <CiCircleRemove />
+          <IoCloseOutline />
         </div>
         <ul>
           <li>
