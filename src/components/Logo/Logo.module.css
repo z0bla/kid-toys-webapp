@@ -17,10 +17,20 @@
 
 @media screen and (min-width: 40rem) {
   .logoImg {
-    height: 2.5rem;
+    height: 2rem;
   }
 
   .logoText {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .logoImg {
+    height: 2.25;
+  }
+
+  .logoText {
+    font-size: 2rem;
   }
 }
