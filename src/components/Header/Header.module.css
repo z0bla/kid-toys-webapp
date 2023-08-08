@@ -1,9 +1,18 @@
 .headerContainer {
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 60rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 40rem) {
+  .headerContainer {
+    padding: 1.75rem 1rem 1rem;
+  }
 }
 
 .navigation a {
