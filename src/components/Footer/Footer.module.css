@@ -29,6 +29,7 @@
 .socialLinks a {
   color: inherit;
   text-decoration: none;
+  transition: color 200ms;
 }
 
 .socialLinks a:hover {
