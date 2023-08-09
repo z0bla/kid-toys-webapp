@@ -9,7 +9,7 @@ import styles from "./Header.module.css";
 function Header(): JSX.Element {
   return (
     <div className={styles.headerContainer}>
-      <Logo />
+      <Logo variant="dark" />
       <Search />
       <SiteActions />
       <NavBar />
