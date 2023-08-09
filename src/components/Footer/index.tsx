@@ -39,6 +39,11 @@ function Footer(): JSX.Element {
           </ul>
         </nav>
       </div>
+      <div className={styles.footerCopyright}>
+        <small>
+          &copy; {year} <span>Kid Toys</span> Company
+        </small>
+      </div>
     </footer>
   );
 }
