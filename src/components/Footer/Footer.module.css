@@ -15,6 +15,26 @@
   margin: 0;
 }
 
+.socialLinks ul {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialLinks a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.socialLinks a:hover {
+  color: var(--accent-pink-dark);
+}
+
 .footerNav ul {
   display: flex;
   flex-direction: column;
@@ -50,7 +70,7 @@
 
 @media screen and (min-width: 30rem) {
   .footerWrapper {
-    grid-template-areas: "logo logo" "about nav";
+    grid-template-areas: "logo social" "about nav";
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -65,5 +85,13 @@
   .footerNav ul {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .socialLinks {
+    grid-area: social;
+  }
+
+  .socialLinks ul {
+    justify-content: start;
   }
 }

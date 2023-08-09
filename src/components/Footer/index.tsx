@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
 import Logo from "../Logo";
 import styles from "./Footer.module.css";
@@ -16,6 +21,25 @@ function Footer(): JSX.Element {
           Spark laughter, learning, and endless fun with our enchanting range of
           kid&apos;s toys that inspire imagination and bring joy to every moment
         </p>
+        <div className={styles.socialLinks}>
+          <ul>
+            <li>
+              <a href="#">
+                <IoLogoFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <IoLogoInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <IoLogoTwitter />
+              </a>
+            </li>
+          </ul>
+        </div>
         <nav className={styles.footerNav}>
           <ul>
             <li>
