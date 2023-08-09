@@ -1,0 +1,43 @@
+.siteActions {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.siteActions a {
+  color: inherit;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.siteActions svg {
+  font-size: 1.25rem;
+}
+
+.siteActions svg:hover {
+  cursor: pointer;
+}
+
+.siteActions * {
+  transition: color 0.2s;
+}
+
+.siteActions *:hover {
+  color: var(--accent-pink-dark);
+}
+
+@media screen and (min-width: 40rem) {
+  .siteActions {
+    margin-left: 0;
+  }
+
+  .siteActions a {
+    font-size: 1rem;
+  }
+
+  .siteActions svg {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.logoContainer {
+  align-items: center;
+  display: flex;
+  font-family: var(--font-secondary);
+  gap: 0.5rem;
+}
+
+.logoImg {
+  height: 1.75rem;
+}
+
+.logoText {
+  color: var(--neutral-darkest);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 40rem) {
+  .logoImg {
+    height: 2rem;
+  }
+
+  .logoText {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .logoImg {
+    height: 2.25;
+  }
+
+  .logoText {
+    font-size: 2rem;
+  }
+}
