@@ -9,7 +9,9 @@ function Footer(): JSX.Element {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerWrapper}>
-        <Logo variant="light" />
+        <div className={styles.footerLogo}>
+          <Logo variant="light" />
+        </div>
         <p className={styles.footerAbout}>
           Spark laughter, learning, and endless fun with our enchanting range of
           kid&apos;s toys that inspire imagination and bring joy to every moment
