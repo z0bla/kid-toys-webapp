@@ -5,16 +5,16 @@ import styles from "./Footer.module.css";
 
 function Footer(): JSX.Element {
   const year = new Date().getFullYear();
+
   return (
-    <footer className={styles.footer}>
-      <Logo />
-      <p>
-        Spark laughter, learning, and endless fun with our enchanting range of
-        kid&apos;s toys that inspire imagination and bring joy to every moment
-      </p>
-      <div>
-        <h4>Company</h4>
-        <nav>
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerWrapper}>
+        <Logo />
+        <p className={styles.footerAbout}>
+          Spark laughter, learning, and endless fun with our enchanting range of
+          kid&apos;s toys that inspire imagination and bring joy to every moment
+        </p>
+        <nav className={styles.footerNav}>
           <ul>
             <li>
               <a href="#">About</a>
