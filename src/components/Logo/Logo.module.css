@@ -10,9 +10,16 @@
 }
 
 .logoText {
-  color: var(--neutral-darkest);
   font-size: 1.5rem;
   margin: 0;
+}
+
+.logoTextDark {
+  color: var(--neutral-darkest);
+}
+
+.logoTextLight {
+  color: var(--neutral-lightest);
 }
 
 @media screen and (min-width: 40rem) {

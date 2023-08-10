@@ -1,12 +1,73 @@
 import React from "react";
+import {
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoTwitter,
+} from "react-icons/io5";
 
+import Logo from "../Logo";
 import styles from "./Footer.module.css";
 
 function Footer(): JSX.Element {
   const year = new Date().getFullYear();
+
   return (
-    <footer className={styles.footer}>
-      <small>owned by SyntaxError company limited © {year}</small>
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerWrapper}>
+        <div className={styles.footerLogo}>
+          <Logo variant="light" />
+        </div>
+        <p className={styles.footerAbout}>
+          Spark laughter, learning, and endless fun with our enchanting range of
+          kid&apos;s toys that inspire imagination and bring joy to every moment
+        </p>
+        <div className={styles.socialLinks}>
+          <ul>
+            <li>
+              <a href="#">
+                <IoLogoFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <IoLogoInstagram />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <IoLogoTwitter />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav className={styles.footerNav}>
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Shipping</a>
+            </li>
+            <li>
+              <a href="#">Returns</a>
+            </li>
+            <li>
+              <a href="#">Terms and Conditions</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className={styles.footerCopyright}>
+        <small>
+          &copy; {year} <span>Kid Toys</span> Company
+        </small>
+      </div>
     </footer>
   );
 }
